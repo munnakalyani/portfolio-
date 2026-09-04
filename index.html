@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -13,22 +14,25 @@
 
     <meta name="author" content="Munnakalyani">
 
-    <title>Munnakalyani | Aspiring Software Developer</title>
+    <title>Munnakalyani | Software Developer Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ================= NAVIGATION ================= -->
-
-    <nav>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
 
         <div class="logo">
             Munnakalyani<span>.</span>
         </div>
 
-        <div class="nav-links">
+        <button class="menu-toggle" id="menuToggle">
+            ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
@@ -40,9 +44,11 @@
     </nav>
 
 
-    <!-- ================= HERO ================= -->
-
+    <!-- HERO -->
     <section id="home" class="hero">
+
+        <div class="hero-glow glow-one"></div>
+        <div class="hero-glow glow-two"></div>
 
         <div class="hero-content">
 
@@ -50,17 +56,19 @@
 
             <h1>Munnakalyani</h1>
 
-            <h2>Aspiring Software Developer</h2>
+            <h2>
+                Aspiring <span>Software Developer</span>
+            </h2>
 
             <p class="hero-text">
-                Passionate about building practical software applications
-                using Python, Java, Flask, JavaScript, SQL and Machine Learning.
+                I build practical and user-friendly software applications
+                using Python, Java, JavaScript, Flask, SQL and Machine Learning.
             </p>
 
             <div class="hero-buttons">
 
                 <a href="#projects" class="button primary">
-                    🚀 View My Projects
+                    🚀 View Projects
                 </a>
 
                 <a href="resume.pdf" target="_blank" class="button secondary">
@@ -75,44 +83,22 @@
 
             </div>
 
-        </div>
+            <div class="hero-stats">
 
-    </section>
-
-
-    <!-- ================= ABOUT ================= -->
-
-    <section id="about">
-
-        <h2>About Me</h2>
-
-        <div class="about-container">
-
-            <div class="about-card">
-
-                <div class="about-icon">
-                    👩‍💻
+                <div>
+                    <strong>6+</strong>
+                    <span>Repositories</span>
                 </div>
 
-                <h3>Who I Am</h3>
+                <div>
+                    <strong>2+</strong>
+                    <span>Featured Projects</span>
+                </div>
 
-                <p>
-                    I am an aspiring Software Developer with a strong interest
-                    in developing real-world applications and solving
-                    programming problems.
-                </p>
-
-                <p>
-                    I enjoy working with Python, Java, JavaScript, Flask,
-                    SQL and Machine Learning. I continuously improve my
-                    technical knowledge by building practical projects.
-                </p>
-
-                <p>
-                    My goal is to begin my professional career in software
-                    development and contribute to meaningful technology
-                    projects while continuing to learn and grow.
-                </p>
+                <div>
+                    <strong>5+</strong>
+                    <span>Technologies</span>
+                </div>
 
             </div>
 
@@ -121,11 +107,90 @@
     </section>
 
 
-    <!-- ================= CAREER OBJECTIVE ================= -->
+    <!-- ABOUT -->
+    <section id="about">
 
-    <section class="objective">
+        <div class="section-heading">
 
-        <h2>Career Objective</h2>
+            <span>ABOUT ME</span>
+
+            <h2>Who I Am</h2>
+
+        </div>
+
+        <div class="about-grid">
+
+            <div class="about-card glass-card">
+
+                <div class="about-icon">
+                    👩‍💻
+                </div>
+
+                <h3>Aspiring Software Developer</h3>
+
+                <p>
+                    I am an aspiring Software Developer interested in
+                    developing real-world applications and solving
+                    programming problems.
+                </p>
+
+                <p>
+                    I enjoy working with Python, Java, JavaScript, Flask,
+                    SQL and Machine Learning. I improve my technical
+                    knowledge through hands-on project development.
+                </p>
+
+                <p>
+                    My goal is to start my professional career in software
+                    development, contribute to meaningful technology projects
+                    and continuously grow as a developer.
+                </p>
+
+            </div>
+
+            <div class="about-highlight">
+
+                <div class="mini-card">
+                    <span>💡</span>
+                    <div>
+                        <h3>Problem Solver</h3>
+                        <p>Breaking complex problems into practical solutions.</p>
+                    </div>
+                </div>
+
+                <div class="mini-card">
+                    <span>🚀</span>
+                    <div>
+                        <h3>Project Builder</h3>
+                        <p>Learning by creating functional applications.</p>
+                    </div>
+                </div>
+
+                <div class="mini-card">
+                    <span>📚</span>
+                    <div>
+                        <h3>Continuous Learner</h3>
+                        <p>Always improving programming and development skills.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CAREER OBJECTIVE -->
+    <section class="objective-section">
+
+        <div class="section-heading">
+
+            <span>CAREER OBJECTIVE</span>
+
+            <h2>My Professional Goal</h2>
+
+        </div>
 
         <div class="objective-card">
 
@@ -137,9 +202,8 @@
                 To obtain an entry-level Software Developer position where
                 I can apply my programming, web development and problem-solving
                 skills to build reliable and user-friendly applications.
-                I am eager to learn new technologies, work collaboratively
-                with development teams and grow as a professional software
-                engineer.
+                I am eager to learn new technologies, collaborate with
+                development teams and grow as a professional software engineer.
             </p>
 
         </div>
@@ -147,194 +211,99 @@
     </section>
 
 
-    <!-- ================= SKILLS ================= -->
-
+    <!-- SKILLS -->
     <section id="skills">
 
-        <h2>Technical Skills</h2>
+        <div class="section-heading">
 
-        <p class="section-intro">
-            Technologies and tools I use to build software applications.
-        </p>
+            <span>MY EXPERTISE</span>
 
+            <h2>Technical Skills</h2>
 
-        <div class="skills-container">
+            <p>
+                Technologies and tools I use to build software applications.
+            </p>
 
-            <!-- Programming -->
+        </div>
 
-            <div class="skill-category">
+        <div class="skills-grid">
 
-                <h3>💻 Programming Languages</h3>
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3>Programming</h3>
 
-                <div class="skills">
-
-                    <div class="skill python">
-                        🐍 Python
-                    </div>
-
-                    <div class="skill java">
-                        ☕ Java
-                    </div>
-
-                    <div class="skill javascript">
-                        ⚡ JavaScript
-                    </div>
-
+                <div class="skill-tags">
+                    <span>🐍 Python</span>
+                    <span>☕ Java</span>
+                    <span>⚡ JavaScript</span>
                 </div>
-
             </div>
 
 
-            <!-- Web -->
+            <div class="skill-card">
+                <div class="skill-icon">🌐</div>
+                <h3>Web Development</h3>
 
-            <div class="skill-category">
-
-                <h3>🌐 Web Development</h3>
-
-                <div class="skills">
-
-                    <div class="skill html">
-                        HTML5
-                    </div>
-
-                    <div class="skill css">
-                        CSS3
-                    </div>
-
-                    <div class="skill flask">
-                        Flask
-                    </div>
-
-                    <div class="skill responsive">
-                        Responsive Design
-                    </div>
-
-                    <div class="skill api">
-                        REST API Basics
-                    </div>
-
+                <div class="skill-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>Flask</span>
+                    <span>REST API</span>
+                    <span>Responsive Design</span>
                 </div>
-
             </div>
 
 
-            <!-- Database -->
+            <div class="skill-card">
+                <div class="skill-icon">🗄️</div>
+                <h3>Database & Data</h3>
 
-            <div class="skill-category">
-
-                <h3>🗄️ Database & Data</h3>
-
-                <div class="skills">
-
-                    <div class="skill sql">
-                        SQL
-                    </div>
-
-                    <div class="skill pandas">
-                        Pandas
-                    </div>
-
-                    <div class="skill numpy">
-                        NumPy
-                    </div>
-
-                    <div class="skill data">
-                        Data Processing
-                    </div>
-
+                <div class="skill-tags">
+                    <span>SQL</span>
+                    <span>Pandas</span>
+                    <span>NumPy</span>
+                    <span>Data Processing</span>
                 </div>
-
             </div>
 
 
-            <!-- Machine Learning -->
+            <div class="skill-card">
+                <div class="skill-icon">🤖</div>
+                <h3>Machine Learning</h3>
 
-            <div class="skill-category">
-
-                <h3>🤖 Machine Learning</h3>
-
-                <div class="skills">
-
-                    <div class="skill sklearn">
-                        Scikit-learn
-                    </div>
-
-                    <div class="skill ml">
-                        Machine Learning
-                    </div>
-
-                    <div class="skill model">
-                        Model Prediction
-                    </div>
-
-                    <div class="skill preprocessing">
-                        Data Preprocessing
-                    </div>
-
+                <div class="skill-tags">
+                    <span>Scikit-learn</span>
+                    <span>Machine Learning</span>
+                    <span>Model Prediction</span>
+                    <span>Data Preprocessing</span>
                 </div>
-
             </div>
 
 
-            <!-- Tools -->
+            <div class="skill-card">
+                <div class="skill-icon">🛠️</div>
+                <h3>Tools</h3>
 
-            <div class="skill-category">
-
-                <h3>🛠️ Tools & Development</h3>
-
-                <div class="skills">
-
-                    <div class="skill git">
-                        Git
-                    </div>
-
-                    <div class="skill github">
-                        GitHub
-                    </div>
-
-                    <div class="skill vscode">
-                        VS Code
-                    </div>
-
-                    <div class="skill deployment">
-                        Web Deployment
-                    </div>
-
+                <div class="skill-tags">
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>VS Code</span>
+                    <span>Web Deployment</span>
                 </div>
-
             </div>
 
 
-            <!-- Soft Skills -->
+            <div class="skill-card">
+                <div class="skill-icon">⭐</div>
+                <h3>Professional Skills</h3>
 
-            <div class="skill-category">
-
-                <h3>⭐ Professional Skills</h3>
-
-                <div class="skills">
-
-                    <div class="skill soft">
-                        Problem Solving
-                    </div>
-
-                    <div class="skill soft">
-                        Communication
-                    </div>
-
-                    <div class="skill soft">
-                        Teamwork
-                    </div>
-
-                    <div class="skill soft">
-                        Continuous Learning
-                    </div>
-
-                    <div class="skill soft">
-                        Time Management
-                    </div>
-
+                <div class="skill-tags">
+                    <span>Problem Solving</span>
+                    <span>Communication</span>
+                    <span>Teamwork</span>
+                    <span>Continuous Learning</span>
+                    <span>Time Management</span>
                 </div>
-
             </div>
 
         </div>
@@ -342,101 +311,84 @@
     </section>
 
 
-    <!-- ================= PROJECTS ================= -->
-
+    <!-- PROJECTS -->
     <section id="projects">
 
-        <h2>Featured Projects</h2>
+        <div class="section-heading">
 
-        <p class="section-intro">
-            A selection of practical projects demonstrating my programming,
-            web development and problem-solving skills.
-        </p>
+            <span>MY WORK</span>
+
+            <h2>Featured Projects</h2>
+
+            <p>
+                Practical projects demonstrating my programming,
+                web development and problem-solving skills.
+            </p>
+
+        </div>
 
 
         <!-- PROJECT 1 -->
+        <div class="project-card">
 
-        <div class="project project-hospital">
+            <div class="project-number">
+                PROJECT 01
+            </div>
 
-            <div class="project-top">
+            <div class="project-header">
 
-                <span class="project-number">
-                    PROJECT 01
-                </span>
+                <div>
+                    <span class="project-emoji">🏥</span>
 
-                <span class="project-icon">
-                    🏥
+                    <h3>AI Hospital Management System</h3>
+                </div>
+
+                <span class="project-status">
+                    LIVE
                 </span>
 
             </div>
 
-            <h3>
-                AI Hospital Management System
-            </h3>
-
             <p>
-                A web-based hospital management application developed using
-                Python and Flask with machine learning integration. The
-                application demonstrates how data processing and machine
-                learning can be incorporated into a web application.
+                A web-based hospital management application developed
+                using Python and Flask with machine learning integration.
+                It demonstrates how data processing and machine learning
+                can be incorporated into a web application.
             </p>
 
+            <h4>Key Features</h4>
 
-            <h4>✨ Key Features</h4>
+            <ul class="feature-list">
 
-            <ul>
-
-                <li>
-                    Flask-based web application
-                </li>
-
-                <li>
-                    Hospital management functionality
-                </li>
-
-                <li>
-                    Machine learning prediction integration
-                </li>
-
-                <li>
-                    Data processing using Pandas
-                </li>
-
-                <li>
-                    Scikit-learn model integration
-                </li>
-
-                <li>
-                    Responsive web interface
-                </li>
+                <li>✓ Flask-based web application</li>
+                <li>✓ Hospital management functionality</li>
+                <li>✓ Machine learning prediction integration</li>
+                <li>✓ Data processing using Pandas</li>
+                <li>✓ Scikit-learn model integration</li>
+                <li>✓ Responsive web interface</li>
 
             </ul>
 
-
-            <h4>🛠️ Technologies</h4>
-
             <div class="project-tech">
-
                 <span>Python</span>
                 <span>Flask</span>
                 <span>Pandas</span>
                 <span>Scikit-learn</span>
                 <span>HTML</span>
                 <span>CSS</span>
-                <span>GitHub</span>
-
             </div>
-
 
             <div class="project-buttons">
 
                 <a href="https://ai-hospital-management-system-3q5i.onrender.com"
-                   target="_blank">
+                   target="_blank"
+                   class="button primary">
                     🌐 Live Demo
                 </a>
 
                 <a href="https://github.com/munnakalyani/ai-hospital-management-system"
-                   target="_blank">
+                   target="_blank"
+                   class="button secondary">
                     💻 Source Code
                 </a>
 
@@ -446,87 +398,65 @@
 
 
         <!-- PROJECT 2 -->
+        <div class="project-card">
 
-        <div class="project project-bank">
+            <div class="project-number">
+                PROJECT 02
+            </div>
 
-            <div class="project-top">
+            <div class="project-header">
 
-                <span class="project-number">
-                    PROJECT 02
-                </span>
+                <div>
+                    <span class="project-emoji">🏦</span>
 
-                <span class="project-icon">
-                    🏦
+                    <h3>Bank Transaction Management System</h3>
+                </div>
+
+                <span class="project-status">
+                    LIVE
                 </span>
 
             </div>
 
-            <h3>
-                Bank Transaction Management System
-            </h3>
-
             <p>
                 A responsive frontend banking application designed to
-                simulate common banking transactions. The application
-                provides users with an interactive interface for managing
+                simulate common banking transactions. Users can manage
                 deposits, withdrawals, balances and transaction history.
             </p>
 
+            <h4>Key Features</h4>
 
-            <h4>✨ Key Features</h4>
+            <ul class="feature-list">
 
-            <ul>
-
-                <li>
-                    Deposit and withdrawal functionality
-                </li>
-
-                <li>
-                    Real-time balance calculation
-                </li>
-
-                <li>
-                    Transaction history tracking
-                </li>
-
-                <li>
-                    Transaction date and time display
-                </li>
-
-                <li>
-                    Input validation
-                </li>
-
-                <li>
-                    Responsive user interface
-                </li>
+                <li>✓ Deposit and withdrawal functionality</li>
+                <li>✓ Real-time balance calculation</li>
+                <li>✓ Transaction history tracking</li>
+                <li>✓ Date and time display</li>
+                <li>✓ Input validation</li>
+                <li>✓ Responsive interface</li>
 
             </ul>
 
-
-            <h4>🛠️ Technologies</h4>
-
             <div class="project-tech">
-
                 <span>HTML5</span>
                 <span>CSS3</span>
                 <span>JavaScript</span>
                 <span>DOM</span>
                 <span>Git</span>
                 <span>GitHub</span>
-
             </div>
-
 
             <div class="project-buttons">
 
                 <a href="https://munnakalyani.github.io/bank-transaction-system/"
-                   target="_blank">
+                   target="_blank"
+                   class="button primary">
                     🌐 Live Demo
                 </a>
 
                 <a href="https://github.com/munnakalyani/bank-transaction-system"
-                   target="_blank">
+                   target="_blank"
+                   class="button secondary">
                     💻 Source Code
                 </a>
 
@@ -534,14 +464,43 @@
 
         </div>
 
+
+        <!-- GITHUB -->
+        <div class="github-card">
+
+            <div class="github-icon">
+                💻
+            </div>
+
+            <div>
+                <h3>More Projects on GitHub</h3>
+
+                <p>
+                    Explore my repositories, source code and development journey.
+                </p>
+            </div>
+
+            <a href="https://github.com/munnakalyani"
+               target="_blank"
+               class="button primary">
+                Visit GitHub →
+            </a>
+
+        </div>
+
     </section>
 
 
-    <!-- ================= EDUCATION ================= -->
-
+    <!-- EDUCATION -->
     <section id="education">
 
-        <h2>Education</h2>
+        <div class="section-heading">
+
+            <span>MY BACKGROUND</span>
+
+            <h2>Education</h2>
+
+        </div>
 
         <div class="education-card">
 
@@ -551,20 +510,25 @@
 
             <div>
 
-                <h3>
-                    Computer Science
-                </h3>
+                <span class="education-label">
+                    COMPUTER SCIENCE
+                </span>
+
+                <h3>Computer Science</h3>
 
                 <p>
                     Focused on programming, software development,
                     web technologies, databases and problem solving.
                 </p>
 
-                <p>
-                    <strong>Relevant Areas:</strong>
-                    Python, Java, JavaScript, SQL, Web Development,
-                    Data Structures, Machine Learning
-                </p>
+                <div class="education-skills">
+                    <span>Python</span>
+                    <span>Java</span>
+                    <span>JavaScript</span>
+                    <span>SQL</span>
+                    <span>Data Structures</span>
+                    <span>Machine Learning</span>
+                </div>
 
             </div>
 
@@ -573,75 +537,53 @@
     </section>
 
 
-    <!-- ================= DEVELOPMENT HIGHLIGHTS ================= -->
-
+    <!-- WHAT I BRING -->
     <section id="highlights">
 
-        <h2>What I Bring</h2>
+        <div class="section-heading">
+
+            <span>WHY ME</span>
+
+            <h2>What I Bring</h2>
+
+        </div>
 
         <div class="highlight-grid">
 
             <div class="highlight-card">
-
-                <div class="highlight-icon">
-                    🧠
-                </div>
-
+                <div>🧠</div>
                 <h3>Problem Solving</h3>
-
                 <p>
                     I enjoy breaking complex problems into smaller,
                     practical solutions.
                 </p>
-
             </div>
 
-
             <div class="highlight-card">
-
-                <div class="highlight-icon">
-                    🚀
-                </div>
-
+                <div>🚀</div>
                 <h3>Project Development</h3>
-
                 <p>
                     I learn technologies by building functional,
                     real-world applications.
                 </p>
-
             </div>
 
-
             <div class="highlight-card">
-
-                <div class="highlight-icon">
-                    📚
-                </div>
-
+                <div>📚</div>
                 <h3>Continuous Learning</h3>
-
                 <p>
                     I continuously improve my programming and development
                     skills through hands-on practice.
                 </p>
-
             </div>
 
-
             <div class="highlight-card">
-
-                <div class="highlight-icon">
-                    🤝
-                </div>
-
+                <div>🤝</div>
                 <h3>Team Collaboration</h3>
-
                 <p>
                     I am interested in collaborating with development teams
                     and learning from experienced professionals.
                 </p>
-
             </div>
 
         </div>
@@ -649,77 +591,60 @@
     </section>
 
 
-    <!-- ================= GITHUB ================= -->
-
-    <section class="github-section">
-
-        <h2>GitHub</h2>
-
-        <p>
-            Explore my source code, projects and development journey on GitHub.
-        </p>
-
-        <a href="https://github.com/munnakalyani"
-           target="_blank"
-           class="button primary">
-
-            💻 Visit My GitHub
-
-        </a>
-
-    </section>
-
-
-    <!-- ================= CONTACT ================= -->
-
+    <!-- CONTACT -->
     <section id="contact">
 
-        <h2>Let's Connect</h2>
+        <div class="section-heading">
 
-        <p>
-            I am currently interested in entry-level Software Developer,
-            Python Developer, Java Developer and Web Developer opportunities.
-        </p>
+            <span>GET IN TOUCH</span>
 
-
-        <div class="contact-info">
+            <h2>Let's Connect</h2>
 
             <p>
-                📧
-                <strong>Email:</strong>
-                <a href="mailto:kalyanimunna17@gmail.com">
-                    kalyanimunna17@gmail.com
-                </a>
-            </p>
-
-
-            <p>
-                💻
-                <strong>GitHub:</strong>
-                <a href="https://github.com/munnakalyani"
-                   target="_blank">
-                    github.com/munnakalyani
-                </a>
+                I am interested in entry-level Software Developer,
+                Python Developer, Java Developer and Web Developer opportunities.
             </p>
 
         </div>
 
+        <div class="contact-card">
+
+            <div class="contact-item">
+                <span>📧</span>
+
+                <div>
+                    <small>Email</small>
+                    <a href="mailto:kalyanimunna17@gmail.com">
+                        kalyanimunna17@gmail.com
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span>💻</span>
+
+                <div>
+                    <small>GitHub</small>
+                    <a href="https://github.com/munnakalyani"
+                       target="_blank">
+                        github.com/munnakalyani
+                    </a>
+                </div>
+            </div>
+
+        </div>
 
         <div class="contact-buttons">
 
             <a href="mailto:kalyanimunna17@gmail.com"
                class="button primary">
-
                 📧 Contact Me
-
             </a>
 
             <a href="resume.pdf"
                target="_blank"
                class="button secondary">
-
-                📄 Resume
-
+                📄 Download Resume
             </a>
 
         </div>
@@ -727,9 +652,12 @@
     </section>
 
 
-    <!-- ================= FOOTER ================= -->
-
+    <!-- FOOTER -->
     <footer>
+
+        <div class="footer-logo">
+            Munnakalyani<span>.</span>
+        </div>
 
         <p>
             © 2026 Munnakalyani. All Rights Reserved.
@@ -747,3 +675,4 @@
 </body>
 
 </html>
+```
